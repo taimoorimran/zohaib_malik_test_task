@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
+body {
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .pageView {
+    height: 100vh;
+  }
+  .hide {
+    display: none !important;
+  }
+  .bodyBox {
+    flex-direction: column-reverse;
+  }
+  .contentGallery .gallery {
+    flex-direction: row !important;
+    width: 48% !important;
+    font-size: 12px;
+    text-align: left;
+    overflow: visible !important;
+    margin-bottom: 30px !important;
+  }
+  .contentGallery .gallery img {
+    border-radius: 5px 5px 0 0;
+  }
+  .contentGallery .gallery span {
+    text-align: left;
+    bottom: -22px !important;
+  }
+  .contentGallery .gallery:nth-child(2n) {
+    margin-right: 0;
+  }
+  .contentText {
+    margin-bottom: 20px;
+  }
+  .contentArea .contentText h2,
+  .contentArea .contentText h6 {
+    font-weight: 300 !important;
+  }
+  .mobileNav {
+    background-color: #28363e;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 5px 15px;
+    box-sizing: border-box;
+  }
+  .mobileNav span svg {
+    width: 85%;
+  }
+}
+.pageView {
+  background: #2f404a;
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+}
+.bodyBox {
+  display: flex;
+}
+.headerBar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerBar .userView {
+  padding-left: 20px;
+}
+.headerBar .userView span {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+}
+.headerBar .searchbar {
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 20px;
+}
+.headerBar .searchbar .searchBox {
+  display: flex;
+  padding: 10px 15px;
+}
+.headerBar .searchbar input {
+  background-color: transparent;
+  border: 0;
+}
+.headerBar .searchbar input:focus {
+  outline: 0;
+}
+.headerBar .searchbar svg {
+  width: 12px;
+}
+.navbar {
+  padding: 10px 0px 10px 30px;
+  width: 70px;
+  text-align: center;
+}
+.navbar .navBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #28363e;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.navbar .navBox span {
+  padding: 10px 0;
+}
+.contentArea {
+  padding: 0px 30px;
+}
+.contentArea .contentText h2,
+.contentArea .contentText h6 {
+  color: #fff;
+  margin: 0;
+  font-weight: 400;
+}
+.contentArea .contentText p {
+  color: #fff;
+  font-weight: 300;
+}
+.contentGallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contentGallery .gallery {
+  width: 25%;
+  flex-direction: column;
+  padding-bottom: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.contentGallery .gallery img {
+  width: 100%;
+}
+.contentGallery .gallery span {
+  display: block;
+  width: 100%;
+  background: #e6ecef;
+  box-shadow: 5px 5px 15px rgba(102, 102, 102, 0.3);
+  border-radius: 0px 0 5px 5px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0;
+}
+@media (min-width: 992px) {
+  .hideNav {
+    display: none;
+  }
+}
